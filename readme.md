@@ -108,6 +108,3 @@ Because `bootstrap/` owns the bucket as a _managed resource_ and the root config
 - **Single-AZ RDS.** The DB subnet group spans both private subnets for future Multi-AZ support, but `multi_az` isn't set, so this deploys a single instance.
 - **`bootstrap/` state is precious.** It's the only pointer Terraform has to the bucket backing the main config's state. Back up `bootstrap/terraform.tfstate` (or at least don't `.gitignore` it away) if this were ever more than a local demo.
 
-## License
-
-MIT — use it, fork it, adapt it.
